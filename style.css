@@ -1,0 +1,90 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(180deg, black 50%, #dc143c 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.container {
+  width: 90%;
+  max-width: 420px;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: 0 8px 25px;
+}
+
+.container * {
+  border: none;
+  outline: none;
+}
+
+.output-wrapper {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+input[type="date"],
+input,
+button {
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid gray;
+  margin: 5px;
+  transition: border-color 0.3s;
+}
+
+input[type="date"] {
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: black;
+  color: #ffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.output-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.output-wrapper div {
+  flex-basis: calc(50% - 20px);
+  background-color: white;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgb(152, 150, 150);
+  margin: 10px;
+  padding: 20px;
+}
+
+span {
+  display: block;
+  font-size: 2rem;
+  font-weight: 500;
+  color: black;
+  margin-bottom: 5px;
+}
+
+p {
+  font-size: 0.87em;
+  color: #707070;
+  font-weight: 400;
+}
